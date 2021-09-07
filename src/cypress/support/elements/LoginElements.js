@@ -1,11 +1,9 @@
 class LoginElements {
-  botaoLogin = () => {
-    return '.main-header-login-content .title'
-  }
+  loginWrapper = () => '.login_wrapper'
 
-  botaoRecuperarSenha = () => {
-    return '.forgot'
-  }
+  formInputUsername = () => 'form #user-name'
+  formInputPassword = () => 'form #password'
+  formBtnLogin = () => 'form #login-button'
 }
 
 export default LoginElements

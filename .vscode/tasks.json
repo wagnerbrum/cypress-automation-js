@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Cypress Open",
+      "type": "shell",
+      "command": "npx cypress open",
+      "options": {
+        "cwd": "${workspaceFolder}/src/"
+      },
+      "problemMatcher": "$msCompile",
+      "presentation": {
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Cypress Test Default",
+      "type": "shell",
+      "command": "npm run test",
+      "options": {
+        "cwd": "${workspaceFolder}/src/"
+      },
+      "problemMatcher": "$msCompile",
+      "presentation": {
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

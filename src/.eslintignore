@@ -1,0 +1,10 @@
+### Node ###
+node_modules/**
+
+### Cypress ###
+reports/**
+
+### Cucumber ###
+cypress/videos/**
+cypress/screenshots/**
+**.cucumber.json

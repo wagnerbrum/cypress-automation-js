@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/.vs": true,
+    "**/node_modules": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  }
+}

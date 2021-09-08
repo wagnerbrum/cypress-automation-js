@@ -12,7 +12,7 @@ Given('que acesso o site', () => {
 When('informo as seguintes credenciais', (dataTable) => {
   const row = dataTable.rows()[0]
 
-  loginPage.fillForm(row[0], row[1])
+  loginPage.fillForm(...row)
 })
 
 When('me autentico no sistema', () => {

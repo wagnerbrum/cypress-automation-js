@@ -1,4 +1,4 @@
-name: CI
+name: Cypress test Chrome
 
 on:
   push:

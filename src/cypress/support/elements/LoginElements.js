@@ -1,9 +1,23 @@
 class LoginElements {
-  loginWrapper = () => '.login_wrapper'
+  get loginWrapper() {
+    return '.login_wrapper'
+  }
 
-  formInputUsername = () => 'form #user-name'
-  formInputPassword = () => 'form #password'
-  formBtnLogin = () => 'form #login-button'
+  get form() {
+    return 'form'
+  }
+
+  get formInputUsername() {
+    return '#user-name'
+  }
+
+  get formInputPassword() {
+    return '#password'
+  }
+
+  get formBtnLogin() {
+    return '#login-button'
+  }
 }
 
 export default LoginElements

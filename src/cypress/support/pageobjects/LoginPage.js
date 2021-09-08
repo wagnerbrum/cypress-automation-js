@@ -9,20 +9,23 @@ const loginElements = new LoginElements()
 class LoginPage {
   visitPage() {
     cy.visit(url)
-    return
   }
 
   isLoginPage() {
-    return cy.get(loginElements.loginWrapper()).should('be.visible')
+    return cy.get(loginElements.loginWrapper).should('be.visible')
   }
 
   fillForm(login, password) {
-    cy.get(loginElements.formInputUsername()).type(login)
-    cy.get(loginElements.formInputPassword()).type(password)
+    cy.get(loginElements.form).within(() => {
+      cy.get(loginElements.formInputUsername).type(login)
+      cy.get(loginElements.formInputPassword).type(password)
+    })
   }
 
   btnLoginClick() {
-    cy.get(loginElements.formBtnLogin()).click()
+    cy.get(loginElements.form).within(() => {
+      cy.get(loginElements.formBtnLogin).click()
+    })
   }
 }
 

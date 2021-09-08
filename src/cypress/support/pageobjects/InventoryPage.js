@@ -8,15 +8,15 @@ const inventoryElements = new InventoryElements()
 
 class InventoryPage {
   btnMenuBurgerClick() {
-    cy.get(inventoryElements.btnMenuBurger()).click()
+    cy.get(inventoryElements.btnMenuBurger).click()
   }
 
   menuWindowIsVisible() {
-    cy.get(inventoryElements.menuWindow()).should('be.visible')
+    cy.get(inventoryElements.menuWindow).should('be.visible')
   }
 
   menuItemLogoutIsVisible() {
-    cy.get(inventoryElements.menuItemLogout()).should('be.visible')
+    cy.get(inventoryElements.menuItemLogout).should('be.visible')
   }
 }
 

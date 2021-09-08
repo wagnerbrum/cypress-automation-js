@@ -13,10 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cypress info
-        uses: ./
-        with:
-          build: npx cypress info
-          working-directory: src
+        run: npx cypress info
 
       - name: Chrome
         uses: cypress-io/github-action@v2

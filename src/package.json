@@ -15,8 +15,8 @@
     "prettier-eslint": "^13.0.0"
   },
   "scripts": {
-    "test": "cypress run --browser chrome --no-exit",
-    "test:chrome": "cypress run --browser chrome --no-exit",
+    "test": "cypress run --browser chrome",
+    "test:chrome": "cypress run --browser chrome",
     "open": "npx cypress open"
   },
   "cypress-cucumber-preprocessor": {

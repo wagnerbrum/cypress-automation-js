@@ -18,7 +18,7 @@
       }
     },
     {
-      "label": "Cypress Test Default",
+      "label": "Cypress Test Stateless",
       "type": "shell",
       "command": "npm run test",
       "options": {
@@ -35,3 +35,5 @@
     }
   ]
 }
+
+// docker build -t teste_cypress .

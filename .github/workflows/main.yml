@@ -17,5 +17,4 @@ jobs:
         with:
           # Specify Browser since container image is compile with Firefox
           browser: firefox
-          project: ./src
-
+          working-directory: src

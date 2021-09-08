@@ -23,10 +23,11 @@ O projeto é feito em Cypress com Cucumber.
 * [X] Estruturar projeto
 * [X] Adicionar lint
 * [X] Adicionar configurações para vscode
-* [X] Criar alguns testes básicos
+* [X] Implementar testes de Login
 * [X] Fazer funcionar dentro do docker
 * [X] Implementar CI com Docker + Git Actions
-* [ ] Implementar mais alguns testes
+* [X] Implementar testes de Checkout
+* [ ] Implementar testes de Inventory
 
 ### Secundario
 

@@ -18,9 +18,16 @@ O projeto é feito em Cypress com Cucumber.
 
 ## To-do
 
-- [X] Estruturar projeto
-- [X] Adicionar lint
-- [X] Adicionar configurações para vscode
-- [X] Criar alguns testes básicos
-- [ ] Fazer funcionar dentro do docker
-- [ ] Implementar CI com Docker + Git Actions
+## Principal
+
+* [X] Estruturar projeto
+* [X] Adicionar lint
+* [X] Adicionar configurações para vscode
+* [X] Criar alguns testes básicos
+* [X] Fazer funcionar dentro do docker
+* [X] Implementar CI com Docker + Git Actions
+* [ ] Implementar mais alguns testes
+
+### Secundario
+
+* [ ] Melhorar saida de log para docker local

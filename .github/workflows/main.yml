@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container: cypress/browsers:node14.17.0-chrome91-ff89
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Cypress info
         run: npx cypress info
@@ -26,7 +27,8 @@ jobs:
       image: cypress/browsers:node14.17.0-chrome91-ff89
       options: --user 1001
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Cypress info
         run: npx cypress info

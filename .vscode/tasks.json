@@ -32,8 +32,23 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Cypress Docker",
+      "detail": "Run tests with Cypress, Chrome And Firefox on Docker",
+      "type": "shell",
+      "command": "docker build --no-cache --progress=plain -t cypress_tests .",
+      "options": {
+        "cwd": "${workspaceFolder}/src/"
+      },
+      "problemMatcher": "$msCompile",
+      "presentation": {
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
-
-// docker build -t teste_cypress .

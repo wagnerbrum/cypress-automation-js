@@ -18,6 +18,10 @@ class LoginElements {
   get formBtnLogin() {
     return '#login-button'
   }
+
+  get formErrorAlert() {
+    return '.error-message-container'
+  }
 }
 
 export default LoginElements

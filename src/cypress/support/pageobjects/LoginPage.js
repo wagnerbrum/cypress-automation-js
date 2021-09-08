@@ -27,6 +27,18 @@ class LoginPage {
       cy.get(loginElements.formBtnLogin).click()
     })
   }
+
+  errorAlertIsVisible() {
+    cy.get(loginElements.form).within(() => {
+      cy.get(loginElements.formErrorAlert).should('be.visible')
+    })
+  }
+
+  errorAlertContainsTheMessage(message) {
+    cy.get(loginElements.form).within(() => {
+      cy.get(loginElements.formErrorAlert).should('have.text', message)
+    })
+  }
 }
 
 export default LoginPage

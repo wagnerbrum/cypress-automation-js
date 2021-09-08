@@ -1,5 +1,6 @@
 import LoginPage from '../pageobjects/LoginPage'
 import InventoryPage from '../pageobjects/InventoryPage'
+import { errorAlertBlockedUser } from '../texts/LoginTexts'
 
 const loginPage = new LoginPage()
 const inventoryPage = new InventoryPage()
@@ -29,4 +30,9 @@ Then('o menu do usuário está visivel', () => {
 
 Then('o usuário aparece logado', () => {
   inventoryPage.menuItemLogoutIsVisible()
+})
+
+Then('um erro aparece informando que o usuário está bloqueado', () => {
+  loginPage.errorAlertIsVisible()
+  loginPage.errorAlertContainsTheMessage(errorAlertBlockedUser)
 })

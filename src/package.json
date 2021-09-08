@@ -17,7 +17,9 @@
   "scripts": {
     "test": "cypress run --browser chrome",
     "test:chrome": "cypress run --browser chrome",
-    "open": "npx cypress open"
+    "test:firefox": "cypress run --browser firefox",
+    "open": "npx cypress open",
+    "open:firefox": "npx cypress open --browser firefox"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"

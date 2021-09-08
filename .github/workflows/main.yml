@@ -1,6 +1,8 @@
-name: Cypress Tests using Cypress Docker Image
+name: Cypress Tests Chrome
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
 
 jobs:
   cypress-run:
@@ -10,11 +12,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress info
+        uses: ./
+        with:
+          build: npx cypress info
+          working-directory: src
+
+      - name: Chrome
         uses: cypress-io/github-action@v2
         with:
-          # Specify Browser since container image is compile with Firefox
-          browser: chrome
           working-directory: src
+          browser: chrome
+          headless: true
